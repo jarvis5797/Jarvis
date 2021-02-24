@@ -15,6 +15,9 @@
 
         body {
             overflow-x: hidden;
+            flex-direction: column; */
+            display: flex;
+            flex-wrap: wrap;
         }
 
         * {
@@ -126,16 +129,14 @@
 
         }
 
-        .skills div {
+        .skill{
+            /* width: 60rem; */
             font-size: 1.5rem;
             margin-top: 1rem;
             margin-bottom: 1 rem;
             color: #15090c;
-
-        }
-
-        .skills div {
             position: relative;
+            text-align: center;
             animation-name: html1;
             animation-duration: 4s;
             animation-iteration-count: infinite;
@@ -148,7 +149,7 @@
             }
 
             to {
-                width: 50rem;
+                width: 40rem;
                 background-color: rgb(0, 119, 128);
             }
         }
@@ -260,13 +261,13 @@
 
     </section>
     <div class="skills">
-        Skills
-        <div class="html">html</div>
-        <div class="css">css</div>
-        <div class="Python">Python</div>
-        <div class="Java">Java</div>
-        <div class="Ethical Hacking">Ethical Hacking</div>
-        <div class="Shell Scripting">Shell Scripting</div>
+        <div class="head">Skills</div>
+        <div class="skill">html</div>
+        <div class="skill">css</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Ethical_Hacking</div>
+        <div class="skill">Shell_Scripting</div>
     </div>
     <hr>
     <div class="head">Projects</div>
