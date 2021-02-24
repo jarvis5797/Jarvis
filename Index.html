@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh_Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header::before {
+            background: url(mypic.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 132rem;
+            height: 117rem;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-wrap: wrap;
+        }
+
+        .navigation li button {
+            background: none;
+            border: none;
+            margin: 1rem;
+            text-decoration: none;
+            font-family: 'Fredoka One', cursive;
+            color: #414180;
+            flex-wrap: wrap;
+            cursor: pointer;
+        }
+
+        button:active {
+            color: green;
+        }
+
+
+        .intro h1 {
+            font-size: 5rem;
+            margin-left: 2rem;
+            margin-top: 15rem;
+            font-family: 'Fredoka One', cursive;
+            color: #1c2162;
+        }
+
+        .intro h3 {
+            font-size: 2rem;
+            margin-left: 15rem;
+            margin-top: 5rem;
+            height: 20rem;
+            font-family: 'Fredoka One', cursive;
+            color: #1c2162;
+        }
+
+        .introduction::before {
+            background: url(introduction.jpg) no-repeat center center/cover fixed;
+            content: "";
+            position: absolute;
+            width: 132rem;
+            height: 117rem;
+            margin-top: 20rem;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        .introduction p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 50rem;
+            text-align: center;
+            background: #c4c4c4;
+            margin-top: 6rem;
+            font-size: 2rem;
+            font-family: 'Fredoka One', cursive;
+            color: #fbfbfb;
+
+        }
+
+        .introduction p a {
+            text-decoration: none;
+            border: 1px solid green;
+            margin-top: 8rem;
+            padding: 1rem;
+            color: #1c5462;
+            cursor: pointer;
+
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 4rem;
+            margin-top: 5rem;
+            font-family: 'Fredoka One', cursive;
+            color: #1c2162;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .skills div {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1 rem;
+            color: #15090c;
+
+        }
+
+        .skills div {
+            position: relative;
+            animation-name: html1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes html1 {
+            from {
+                width: 0rem;
+                background-color: rgb(0, 66, 128);
+            }
+
+            to {
+                width: 50rem;
+                background-color: rgb(0, 119, 128);
+            }
+        }
+
+        hr {
+            margin-top: 10rem;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 4rem;
+            margin-top: 10rem;
+            align-items: center;
+            justify-content: center;
+            color: #1c2162;
+            font-family: 'Fredoka One', cursive;
+
+        }
+
+        .projects {
+            display: flex;
+            margin-top: 5rem;
+            align-items: center;
+            justify-content: space-around;
+            /* border: 2px solid red; */
+            height: 18rem;
+
+        }
+
+        .project {
+            /* border: 2px solid black; */
+            width: 24rem;
+            height: 15rem;
+            font-size: 1rem;
+            text-align: center;
+            color: #15090c;
+            font-family: 'Fredoka One', cursive;
+            background-color: #46d33e73;
+        }
+        .project:hover{
+            position: relative;
+            position: relative;
+            animation-name: an;
+            animation-duration: 0.1s;
+            animation-iteration-count: 1;
+            /* animation-play-state: paused; */
+            animation-fill-mode: forwards;
+        }
+        @keyframes an {
+            from{
+                width: 24rem;
+                height: 15rem;
+            }
+            to{
+                width: 27rem;
+                height: 18rem;
+            }
+            
+        }
+
+        .project a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: #15090c;
+            cursor: pointer;
+        }
+        .project p{
+            margin-top: 3rem;
+            font-size: 1rem;
+            font-family: 'Fredoka One', cursive;
+            color: #040124;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li> <Button>Home</Button></li>
+                <li> <Button>Skills</Button></li>
+                <li> <Button>Certificates</Button></li>
+                <li> <Button>Achievments</Button></li>
+                <li> <Button>Contact</Button></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>I'm ASHUTOSH <br> RAJ BARANWAL.</h1>
+            <h3>ETHICAL HACKER , WEB DEVELOPER</h3>
+        </div>
+    </header>
+    <section class="introduction">
+        <p>I am Ashutosh Raj Baranwal . I am from Gorakhpur. <br> Curently I am persuing Btech with
+            specialization in cyber security from GLA university Mathura. <br>
+            It is my 6 semester going on . I had done my intermediate and high school from Navals academy gorakhpur.
+            <br>
+            Right Now, I am exploring Internship opportunities in the cyber security domain as I am intrested in this
+            field . <br><a href="https://drive.google.com/file/d/1Z0DqfwWaEAsGcg2Z7bUEd-Fcistsf8MD/view?usp=sharing"
+                target="_blank">Download Resume</a>
+        </p>
+
+    </section>
+    <div class="skills">
+        Skills
+        <div class="html">html</div>
+        <div class="css">css</div>
+        <div class="Python">Python</div>
+        <div class="Java">Java</div>
+        <div class="Ethical Hacking">Ethical Hacking</div>
+        <div class="Shell Scripting">Shell Scripting</div>
+    </div>
+    <hr>
+    <div class="head">Projects</div>
+    <div class="projects">
+        <!-- <div class="line"></div> -->
+        <div class="project"> <a href="https://github.com/jarvis5797/Dictionary_with_guess">Dictionary_with_guess</a>
+            <p>This Python based project helps you to search definiton of any words.
+                It also gives you related guess if you misspell your words </p>
+        </div>
+        <div class="project"><a href="https://github.com/jarvis5797/Exploit_it">Exploit_it</a></div>
+        <div class="project"> <a href="https://github.com/jarvis5797/Dos_Jarvis"> Dos_jarvis</a> </div>
+        <div class="project"> <a href="https://github.com/jarvis5797?tab=repositories">Insta_Brute</a> </div>
+        <div class="project"> <a href="https://github.com/jarvis5797/Add_cipher">Add_cipher</a> </div>
+    </div>
+
+</body>
+
+</html>
