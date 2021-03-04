@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+            .projects:before {
+            background: url(project_background.jpg) no-repeat center center/cover fixed;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 300%;
+            margin-top: 20rem;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        .projects {
+            display: flex;
+            margin-top: 5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            /* border: 2px solid red; */
+            /* height: 18rem; */
+
+        }
+
+        .project {
+            /* border: 2px solid black; */
+            width: 23rem;
+            height: 15rem;
+            font-size: 1rem;
+            text-align: center;
+            color: #15090c;
+            font-family: 'Fredoka One', cursive;
+            background-color: #46d33e73;
+        }
+
+        .project:hover {
+            position: relative;
+            position: relative;
+            animation-name: an;
+            animation-duration: 0.1s;
+            animation-iteration-count: 1;
+            /* animation-play-state: paused; */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes an {
+            from {
+                width: 24rem;
+                height: 15rem;
+            }
+
+            to {
+                width: 27rem;
+                height: 18rem;
+            }
+
+        }
+
+        .project a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: #15090c;
+            cursor: pointer;
+        }
+
+        .project p {
+            margin-top: 3rem;
+            font-size: 1rem;
+            font-family: 'Fredoka One', cursive;
+            color: #040124;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">certifications</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="#">Achivements</a>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="head">Projects</div>
+    <div class="projects">
+        <!-- <div class="line"></div> -->
+        <div class="project"> <a href="https://github.com/jarvis5797/Dictionary_with_guess">Dictionary_with_guess</a>
+            <p>This Python based project helps you to search definiton of any words.
+                It also gives you related guess if you misspell your words </p>
+        </div>
+        <div class="project"><a href="https://github.com/jarvis5797/Exploit_it">Exploit_it</a>
+            <p>This Python and linux tool based project created for pentesters to make their life easier
+                and give them a relivant tool with consist of all information gathering tasks with a GUI Interface.
+            </p>
+        </div>
+        <div class="project"><a href="https://github.com/jarvis5797/Dos_Jarvis"> Dos_jarvis</a>
+            <p> This is a shell script based project used to perform different type of DoS attacks on victim IP
+            </p>
+        </div>
+        <div class="project"> <a href="https://github.com/jarvis5797?tab=repositories">Insta_Brute</a>
+            <p> This Project is for Bruteforcing Instagram Passwords by proxy. It only needs username,wordlist and it
+                will give you password of the id </p>
+        </div>
+        <div class="project"> <a href="https://github.com/jarvis5797/Add_cipher">Add_cipher</a>
+            <p>This Python based project is for encrypting and decrypting your message of the basis of additive cipher.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
