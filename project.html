@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
     <style>
-        .navbar{
+        .navbar {
             background-color: transparent;
             font-family: 'Fredoka One', cursive;
             font-size: medium;
@@ -19,7 +21,27 @@
             justify-content: center;
 
         }
-            .projects::before {
+
+        .navbar a {
+            color: #f0a17c;
+        }
+
+        .navbar a:active {
+            color: yellow;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: #2dff09d4;
+            font-family: 'Fredoka One', cursive;
+            font-size: x-large;
+            background-color: #653232;
+
+        }
+
+        .projects::before {
             background: url(project_background.jpg) no-repeat center center/cover fixed;
             content: "";
             position: absolute;
@@ -29,6 +51,7 @@
             z-index: -1;
             opacity: 0.9;
         }
+
         .projects {
             display: flex;
             margin-top: 2rem;
@@ -46,7 +69,7 @@
             text-align: center;
             color: #15090c;
             font-family: 'Fredoka One', cursive;
-            background-color: #46d33e73;
+            background-color: #5b9b5773;
         }
 
         .project:hover {
@@ -78,40 +101,92 @@
             cursor: pointer;
         }
 
+        .project a:hover {
+            color: rgb(197, 163, 68);
+        }
+
         .project p {
             margin-top: 3rem;
             font-size: 1rem;
             font-family: 'Fredoka One', cursive;
             color: #040124;
         }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        .fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 4rem;
+
+  margin: 2rem;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 4rem;
+  margin: 2rem;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  width: 4rem;
+  margin: 2rem;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width: 4rem;
+  margin: 2rem;
+}
+
+        .fa:hover {
+            opacity: 0.7;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">certifications</a>
-              </li>        
-              <li class="nav-item">
-                <a class="nav-link" href="#">Achivements</a>
-              </li>        
-            </ul>
-          </div>
+            <a class="navbar-brand" href="./index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Achivements</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div class="head">Projects</div>
     <div class="projects">
         <div class="project"> <a href="https://github.com/jarvis5797/Dictionary_with_guess">Dictionary_with_guess</a>
@@ -136,6 +211,14 @@
             </p>
         </div>
     </div>
+    <!-- <i class="fa fa-facebook"></i> -->
+    <footer class="social">
+       <a href="https://www.facebook.com/ashutoshraj.baranwal/" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/ceaser_qhycpz/" target="_blank" class="fa fa-instagram"></a>
+    </footer>    
+ 
 </body>
 
 </html>
