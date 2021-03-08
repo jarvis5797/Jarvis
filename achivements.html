@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achivements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 11px;
+        }
+
+        body {
+            overflow-x: hidden;
+            flex-direction: column;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header::before {
+            background: url(achivement_bg.jpg) no-repeat center center/cover fixed;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 200%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navbar {
+            background-color: transparent;
+            font-family: 'Fredoka One', cursive;
+            font-size: medium;
+            align-items: center;
+            justify-content: center;
+            /* position: sticky; */
+
+        }
+
+        .profile_badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badges {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            /* margin-top: 5%; */
+            /* padding: 3%; */
+            margin: 3%;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        #id {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./project.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./certificates.html">certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./achivements.html">Achivements</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="profile_badge">
+            <script src="https://tryhackme.com/badge/160613"></script>
+        </div>
+    </header>
+        <div class="badges">
+
+
+            <div class="card" id="nse" style="width: 18rem;">
+                <img src="./badges/NSE-1-Featured-Logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NSE-1</h5>
+                    <p class="card-text">Got certified as Network Security Expert by Fortinet. </p>
+                    <a href="#" class="btn btn-primary">certificates</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/ohsint.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">OhSINT</h5>
+                    <p class="card-text">Completing the OhSINT room</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/ohsint" target="_blank" class="btn btn-primary">Go to badge link</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="badges/blue.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">BLUE</h5>
+                    <p class="card-text">Hacking into Windows via EternalBlue</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/blue" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/hashcracker.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hash cracker</h5>
+                    <p class="card-text">Cracking all those hashes</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/hashcracker" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/metasploit.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Metasploit</h5>
+                    <p class="card-text">Contains the knowledge to use Metasploit</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/metasploit" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/owasptop10.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">OWASP Top 10</h5>
+                    <p class="card-text">Understanding every OWASP vulnerability</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/owasptop10" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/streak7.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">7 days Streak</h5>
+                    <p class="card-text">Achieving a 7 day hacking streak</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/streak7" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./badges/webbed.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Webbed</h5>
+                    <p class="card-text">Understands how the world wide web works</p>
+                    <a href="https://tryhackme.com/Jrvis/badges/webbed" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
