@@ -1,6 +1,13 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import SkillBadge from "../components/SkillBadge";
+import AIInput from "../components/AIInput";
 
 export default function Home() {
+  const [question, setQuestion] = useState("");
+  const [submittedQuestion, setSubmittedQuestion] = useState("");
+
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-centerflex flex-col items-center justify-center min-h-screen">
@@ -19,46 +26,30 @@ export default function Home() {
           technologies.
         </p>
 
-        <div className="mt-10 w-full max-w-2xl">
-          <div className="flex rounded-2xl border border-gray-800 bg-gray-950 p-2">
+          <AIInput
+            question={question}
+            setQuestion={setQuestion}
+            onAsk={() => setSubmittedQuestion(question)}
+          />
 
-            <input
-              type="text"
-              placeholder="Ask anything about Ashutosh..."
-              className="flex-1 bg-transparent px-4 py-4 text-white outline-none placeholder:text-gray-600"
-            />
-
-            <button className="rounded-xl bg-white px-6 py-3 font-medium text-black">
-              Ask
-            </button>
-
-          </div>
-        </div>
+          {submittedQuestion && (
+            <p className="mt-6 text-gray-300">
+              You asked: {submittedQuestion}
+            </p>
+          )}
+        
 
         <p className="mt-5 text-sm text-gray-500">
           Try asking: "Why should I shortlist Ashutosh?"
         </p>
 
         <div className="mt-12 flex flex-wrap justify-center gap-3">
-          <span className="rounded-full border border-gray-800 px-4 py-2 text-sm text-gray-400">
-            4+ Years Experience
-          </span>
-
-          <span className="rounded-full border border-gray-800 px-4 py-2 text-sm text-gray-400">
-            Java
-          </span>
-
-          <span className="rounded-full border border-gray-800 px-4 py-2 text-sm text-gray-400">
-            Spring Boot
-          </span>
-
-          <span className="rounded-full border border-gray-800 px-4 py-2 text-sm text-gray-400">
-            Microservices
-          </span>
-
-          <span className="rounded-full border border-gray-800 px-4 py-2 text-sm text-gray-400">
-            System Design
-          </span>
+          
+          <SkillBadge name="4+ years of experience" />
+          <SkillBadge name="Java" />
+          <SkillBadge name="Spring Boot" />
+          <SkillBadge name="Microservices" />
+          <SkillBadge name="System Design" />
         </div>
 
       </section>
