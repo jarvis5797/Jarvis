@@ -57,8 +57,7 @@ export default function Home() {
     setJobMatchReport(null);
 
     try {
-      const response = await fetch(
-        "http://localhost:8080/api/chat",
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat`,
         {
           method: "POST",
           headers: {
