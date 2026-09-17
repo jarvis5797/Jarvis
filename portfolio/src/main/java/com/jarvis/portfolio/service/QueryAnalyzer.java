@@ -13,11 +13,13 @@ public class QueryAnalyzer {
 		
 		String normalizedQuestion = question.toLowerCase().trim();
 		
-		if(containsAny(normalizedQuestion, List.of( "current role",
-                "currently",
-                "current company",
-                "working now",
-                "what is he working on"))) {
+		if(containsAny(normalizedQuestion, List.of(  "current role",
+		        "currently",
+		        "current company",
+		        "working now",
+		        "what is he working on",
+		        "what is he doing at cloudsufi",
+		        "what is ashutosh doing at cloudsufi"))) {
 			return QueryIntent.CURRENT_ROLE;
 		}
 		
@@ -27,10 +29,16 @@ public class QueryAnalyzer {
 			return QueryIntent.PROJECTS;
 		}
 		
-		if(containsAny(normalizedQuestion, List.of( "experience",
-                "worked",
-                "company",
-                "career"))) {
+		if(containsAny(normalizedQuestion, List.of("experience",
+		        "worked",
+		        "company",
+		        "career",
+		        "what did he do",
+		        "what did ashutosh do",
+		        "responsibilities",
+		        "role at",
+		        "work at",
+		        "worked at"))) {
 			return QueryIntent.EXPERIENCE;
 		}
 		

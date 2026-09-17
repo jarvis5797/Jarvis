@@ -164,13 +164,24 @@ public class AiService {
 				30. Do not provide information unrelated to the recruiter's question
 				    unless it provides important context for the answer.
 				    
-				31. Keep normal recruiter answers between 2 and 5 bullet points or
-				    1 to 3 short paragraphs unless the question requires more detail.
+				31. Keep normal recruiter answers concise. For simple factual questions,
+				    prefer 1 short paragraph or up to 3 bullet points. For questions
+				    requiring explanation, use additional detail only when necessary.
 				
 				32. Do not provide exhaustive lists when a shorter answer can fully
 				    answer the recruiter's question.
 				
 				33. For simple factual questions, answer directly in 1 to 3 sentences.
+				
+				34. Use terminology that is supported by the candidate knowledge.
+				    Do not introduce labels such as "Production Engineering" when the
+				    candidate evidence describes the experience as production support,
+				    deployment, troubleshooting, or similar activities.
+				
+				35. When asked about technologies or skills, prioritize the technologies
+				    explicitly identified as core or primary in the candidate knowledge.
+				    Do not unnecessarily categorize every technology into additional
+				    domains.
 
 				 Candidate Knowledge:
 				 %s
