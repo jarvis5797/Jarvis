@@ -2,15 +2,17 @@ type AIInputProps = {
     question: string;
     setQuestion: (value: string) => void;
     onAsk: () => void;
+    isLoading: boolean;
 };
 
 export default function AIInput({
     question,
     setQuestion,
-    onAsk, }: AIInputProps) {
+    onAsk,
+    isLoading,}: AIInputProps) {
 
     return (
-        <div className="w-full max-w-2xl">
+        <div className="w-full max-w-2xl mt-8">
             <div className="flex rounded-2xl border border-gray-800 bg-gray-950 p-2">
 
                 <input
@@ -27,14 +29,11 @@ export default function AIInput({
                 />
 
                 <button
-                    onClick={() => {
-                        if (question.trim()) {
-                            onAsk();
-                        }
-                    }}
+                    onClick={onAsk}
+                    disabled={isLoading}
                     className="rounded-xl bg-white px-6 py-3 font-medium text-black"
                 >
-                    Ask
+                    {isLoading ? "Thinking..." : "Ask"}
                 </button>
 
             </div>

@@ -1,0 +1,18 @@
+{
+	"name" : "Ashutosh Raj Baranwal",
+	"currentRole" : "Software Engineer",
+	"currentCompany" : "CloudSufi",
+	"location" : "Noida",
+	"targetRole" : "Java Full Stack Developer",
+	"primaryFocus" : "Backend Development",
+	"experienceSummary" : "Backend-focused software engineer with experience in Java, Spring Boot, microservices, Kafka, system design and React.",
+	"strongestAreas" : [
+		"Java",
+		"Spring Boot",
+		"Backend Development",
+		"Microservices",
+		"Kafka",
+		"System Design",
+		"Production Engineering"
+	]
+}

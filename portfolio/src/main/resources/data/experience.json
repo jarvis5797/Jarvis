@@ -1,0 +1,44 @@
+{
+	"professionalExperience" : [{
+			"company" : "CloudSufi",
+			"role" : "Software Engineer",
+			"period" : "Jan 2026 - Present",
+			"location" : "Noida",
+			"responsibilities" : [
+				"Built a Shopify Connector for Google BigQuery Data Transfer Service",
+				"Developed the connector using Java and Spring Boot",
+				"Used Google Pub/Sub and REST APIs",
+				"Built the connector to transfer data from a Shopify instance to BigQuery tables",
+				"Worked across design, development, testing and deployment",
+				"Provided production support and resolved bugs",
+				"Addressed security vulnerabilities within SLOs",
+				"Performed root cause analysis and performance and stability improvements"
+			]
+		}, {
+			"company" : "Innova Solutions",
+			"role" : "Software Engineer",
+			"period" : "Mar 2024 - Dec 2025",
+			"responsibilities" : [
+				"Worked on a healthcare product that calculates monthly provider payments based on member plans",
+				"Created APIs",
+				"Resolved production issues",
+				"Implemented bulk insert improvements",
+				"Led migration from on-premise Kafka to Confluent Cloud",
+				"Implemented OAuth 2.0 for third-party APIs",
+				"Worked with Spring Boot, Kafka, MongoDB and PostgreSQL",
+				"Developed React pages",
+				"Worked on CI/CD and migration to Spring Boot 3.3.4"
+			]
+		}, {
+			"company" : "Innova Solutions",
+			"role" : "Associate Software Engineer",
+			"period" : "Jun 2022 - Mar 2024",
+			"responsibilities" : [
+				"Worked on the CAPE healthcare product",
+				"Provided production support",
+				"Resolved critical production issues",
+				"Worked on backend development and API implementation"
+			]
+		}
+	]
+}

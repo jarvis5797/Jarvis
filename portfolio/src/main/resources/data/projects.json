@@ -1,0 +1,58 @@
+{
+	"professionalProjects" : [{
+			"name" : "Shopify to BigQuery Connector",
+			"company" : "CloudSufi",
+			"type" : "Professional",
+			"technologies" : [
+				"Java",
+				"Spring Boot",
+				"Google Pub/Sub",
+				"REST APIs",
+				"BigQuery",
+				"Shopify"
+			],
+			"description" : "A connector that transfers data from a Shopify instance to BigQuery tables.",
+			"contribution" : "Built the complete connector and worked across design, development, testing and deployment."
+		}, {
+			"name" : "CAPE",
+			"company" : "Innova Solutions",
+			"type" : "Professional",
+			"technologies" : [
+				"Java",
+				"Spring Boot",
+				"Kafka",
+				"MongoDB",
+				"PostgreSQL",
+				"React"
+			],
+			"description" : "Healthcare product that calculates monthly provider payments based on member plans.",
+			"contribution" : "Created APIs, resolved production issues, implemented bulk insert improvements and led the Kafka migration from on-premise to Confluent Cloud."
+		}
+	],
+	"personalProjects" : [{
+			"name" : "Splitwise Clone",
+			"type" : "Personal",
+			"technologies" : [
+				"Java",
+				"Spring Boot",
+				"React",
+				"Kafka",
+				"Microservices",
+				"Cache"
+			],
+			"description" : "Bill-splitting application where users can create groups and manage expenses for trips and other activities."
+		}, {
+			"name" : "OwnIt",
+			"type" : "Personal",
+			"technologies" : [
+				"Java",
+				"Spring Boot",
+				"React",
+				"Kafka",
+				"Microservices",
+				"Cache"
+			],
+			"description" : "QR-based asset ownership tracker. A QR code is generated for an asset, and scanning it provides the relevant person's details and point of contact for reaching the owner."
+		}
+	]
+}

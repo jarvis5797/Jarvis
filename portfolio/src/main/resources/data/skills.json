@@ -1,0 +1,44 @@
+{
+	"technicalSkills" : {
+		"languages" : [
+			"Java"
+		],
+		"backend" : [
+			"Spring Boot",
+			"Spring",
+			"Hibernate",
+			"Microservices",
+			"Spring Security",
+			"REST APIs"
+		],
+		"frontend" : [
+			"React"
+		],
+		"messaging" : [
+			"Kafka",
+			"Google Pub/Sub"
+		],
+		"databases" : [
+			"MySQL",
+			"MongoDB",
+			"PostgreSQL",
+			"MSSQL"
+		],
+		"devops" : [
+			"Docker",
+			"Kubernetes",
+			"GitLab CI",
+			"CI/CD",
+			"AWS",
+			"Rancher"
+		],
+		"other" : [
+			"Data Structures",
+			"Unit Testing",
+			"Design Patterns",
+			"HLD",
+			"LLD",
+			"Scalability Planning"
+		]
+	}
+}
