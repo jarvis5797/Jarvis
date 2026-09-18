@@ -10,7 +10,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProjectSection from "@/components/ProjectsSection";
 
 type Message = {
-  role: "user" | "jarvis";
+  role: "user" | "kowalski";
   content: string;
 };
 
@@ -91,7 +91,7 @@ export default function Home() {
 
       else if (data.answer) {
         const assistantMessage: Message = {
-          role: "jarvis",
+          role: "kowalski",
           content: data.answer,
         };
 
@@ -133,7 +133,7 @@ export default function Home() {
 
           <div className="mb-4 text-left">
             <p className="text-sm font-medium text-gray-400">
-              Ask Jarvis
+              Ask Kowalski
             </p>
 
             <p className="mt-1 text-sm text-gray-600">
@@ -171,7 +171,7 @@ export default function Home() {
                   <p className="text-sm text-gray-400">
                     {isJobAnalysis
                       ? "Analyzing job requirements against Ashutosh's experience..."
-                      : "Jarvis is thinking..."}
+                      : "Kowalski is thinking..."}
                   </p>
                 </div>
 

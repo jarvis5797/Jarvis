@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 
 type ChatMessageProps = {
-  role: "user" | "jarvis";
+  role: "user" | "kowalski";
   content: string;
 };
 
